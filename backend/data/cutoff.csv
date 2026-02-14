@@ -1,0 +1,174 @@
+college,branch,year,category,cutoff,location
+Anna University,CSE,2019,OC,199.2,Chennai
+Anna University,CSE,2020,OC,199.3,Chennai
+Anna University,CSE,2021,OC,199.4,Chennai
+Anna University,CSE,2022,OC,199.5,Chennai
+Anna University,CSE,2023,OC,199.5,Chennai
+
+Anna University,IT,2019,BC,198.0,Chennai
+Anna University,IT,2020,BC,198.1,Chennai
+Anna University,IT,2021,BC,198.2,Chennai
+Anna University,IT,2022,BC,198.3,Chennai
+Anna University,IT,2023,BC,198.4,Chennai
+
+Anna University,AI & DS,2019,OC,197.6,Chennai
+Anna University,AI & DS,2020,OC,197.9,Chennai
+Anna University,AI & DS,2021,OC,198.2,Chennai
+Anna University,AI & DS,2022,OC,198.6,Chennai
+Anna University,AI & DS,2023,OC,198.8,Chennai
+
+Anna University,AI & ML,2019,OC,197.8,Chennai
+Anna University,AI & ML,2020,OC,198.1,Chennai
+Anna University,AI & ML,2021,OC,198.4,Chennai
+Anna University,AI & ML,2022,OC,198.7,Chennai
+Anna University,AI & ML,2023,OC,199.0,Chennai
+
+PSG College of Technology,CSE,2019,BC,197.8,Coimbatore
+PSG College of Technology,CSE,2020,BC,198.0,Coimbatore
+PSG College of Technology,CSE,2021,BC,198.2,Coimbatore
+PSG College of Technology,CSE,2022,BC,198.4,Coimbatore
+PSG College of Technology,CSE,2023,BC,198.6,Coimbatore
+
+PSG College of Technology,IT,2019,BC,196.9,Coimbatore
+PSG College of Technology,IT,2020,BC,197.1,Coimbatore
+PSG College of Technology,IT,2021,BC,197.3,Coimbatore
+PSG College of Technology,IT,2022,BC,197.6,Coimbatore
+PSG College of Technology,IT,2023,BC,197.9,Coimbatore
+
+SSN College of Engineering,ECE,2019,OC,195.4,Kanchipuram
+SSN College of Engineering,ECE,2020,OC,195.8,Kanchipuram
+SSN College of Engineering,ECE,2021,OC,196.2,Kanchipuram
+SSN College of Engineering,ECE,2022,OC,196.6,Kanchipuram
+SSN College of Engineering,ECE,2023,OC,197.0,Kanchipuram
+
+SSN College of Engineering,EEE,2019,BC,194.2,Kanchipuram
+SSN College of Engineering,EEE,2020,BC,194.5,Kanchipuram
+SSN College of Engineering,EEE,2021,BC,194.9,Kanchipuram
+SSN College of Engineering,EEE,2022,BC,195.3,Kanchipuram
+SSN College of Engineering,EEE,2023,BC,195.7,Kanchipuram
+
+Thiagarajar College of Engineering,MECH,2019,MBC,192.8,Madurai
+Thiagarajar College of Engineering,MECH,2020,MBC,193.2,Madurai
+Thiagarajar College of Engineering,MECH,2021,MBC,193.6,Madurai
+Thiagarajar College of Engineering,MECH,2022,MBC,194.1,Madurai
+Thiagarajar College of Engineering,MECH,2023,MBC,194.6,Madurai
+
+Thiagarajar College of Engineering,CIVIL,2019,BC,191.5,Madurai
+Thiagarajar College of Engineering,CIVIL,2020,BC,191.9,Madurai
+Thiagarajar College of Engineering,CIVIL,2021,BC,192.4,Madurai
+Thiagarajar College of Engineering,CIVIL,2022,BC,192.9,Madurai
+Thiagarajar College of Engineering,CIVIL,2023,BC,193.4,Madurai
+
+Coimbatore Institute of Technology,CSE,2019,OC,197.6,Coimbatore
+Coimbatore Institute of Technology,CSE,2020,OC,197.9,Coimbatore
+Coimbatore Institute of Technology,CSE,2021,OC,198.1,Coimbatore
+Coimbatore Institute of Technology,CSE,2022,OC,198.3,Coimbatore
+Coimbatore Institute of Technology,CSE,2023,OC,198.5,Coimbatore
+
+Coimbatore Institute of Technology,IT,2019,BC,196.5,Coimbatore
+Coimbatore Institute of Technology,IT,2020,BC,196.9,Coimbatore
+Coimbatore Institute of Technology,IT,2021,BC,197.2,Coimbatore
+Coimbatore Institute of Technology,IT,2022,BC,197.5,Coimbatore
+Coimbatore Institute of Technology,IT,2023,BC,197.8,Coimbatore
+
+Government College of Technology,ECE,2019,OC,195.2,Coimbatore
+Government College of Technology,ECE,2020,OC,195.6,Coimbatore
+Government College of Technology,ECE,2021,OC,196.0,Coimbatore
+Government College of Technology,ECE,2022,OC,196.4,Coimbatore
+Government College of Technology,ECE,2023,OC,196.8,Coimbatore
+
+Government College of Technology,EEE,2019,BC,194.0,Coimbatore
+Government College of Technology,EEE,2020,BC,194.4,Coimbatore
+Government College of Technology,EEE,2021,BC,194.8,Coimbatore
+Government College of Technology,EEE,2022,BC,195.2,Coimbatore
+Government College of Technology,EEE,2023,BC,195.6,Coimbatore
+
+SRM Institute of Science and Technology,CSE,2019,OC,197.9,Chengalpattu
+SRM Institute of Science and Technology,CSE,2020,OC,198.1,Chengalpattu
+SRM Institute of Science and Technology,CSE,2021,OC,198.3,Chengalpattu
+SRM Institute of Science and Technology,CSE,2022,OC,198.5,Chengalpattu
+SRM Institute of Science and Technology,CSE,2023,OC,198.7,Chengalpattu
+
+SRM Institute of Science and Technology,AI & DS,2019,BC,196.8,Chengalpattu
+SRM Institute of Science and Technology,AI & DS,2020,BC,197.2,Chengalpattu
+SRM Institute of Science and Technology,AI & DS,2021,BC,197.6,Chengalpattu
+SRM Institute of Science and Technology,AI & DS,2022,BC,198.0,Chengalpattu
+SRM Institute of Science and Technology,AI & DS,2023,BC,198.3,Chengalpattu
+
+Vellore Institute of Technology,CSE,2019,OC,198.6,Vellore
+Vellore Institute of Technology,CSE,2020,OC,198.8,Vellore
+Vellore Institute of Technology,CSE,2021,OC,199.0,Vellore
+Vellore Institute of Technology,CSE,2022,OC,199.1,Vellore
+Vellore Institute of Technology,CSE,2023,OC,199.2,Vellore
+
+Vellore Institute of Technology,AI & ML,2019,OC,197.9,Vellore
+Vellore Institute of Technology,AI & ML,2020,OC,198.2,Vellore
+Vellore Institute of Technology,AI & ML,2021,OC,198.5,Vellore
+Vellore Institute of Technology,AI & ML,2022,OC,198.8,Vellore
+Vellore Institute of Technology,AI & ML,2023,OC,199.0,Vellore
+
+Rajalakshmi Engineering College,CSE,2019,BC,195.6,Chennai
+Rajalakshmi Engineering College,CSE,2020,BC,196.0,Chennai
+Rajalakshmi Engineering College,CSE,2021,BC,196.3,Chennai
+Rajalakshmi Engineering College,CSE,2022,BC,196.7,Chennai
+Rajalakshmi Engineering College,CSE,2023,BC,197.0,Chennai
+
+Rajalakshmi Engineering College,IT,2019,MBC,194.8,Chennai
+Rajalakshmi Engineering College,IT,2020,MBC,195.2,Chennai
+Rajalakshmi Engineering College,IT,2021,MBC,195.6,Chennai
+Rajalakshmi Engineering College,IT,2022,MBC,196.0,Chennai
+Rajalakshmi Engineering College,IT,2023,MBC,196.4,Chennai
+
+Vel Tech Rangarajan College,CSE,2019,BC,194.2,Chennai
+Vel Tech Rangarajan College,CSE,2020,BC,194.6,Chennai
+Vel Tech Rangarajan College,CSE,2021,BC,195.0,Chennai
+Vel Tech Rangarajan College,CSE,2022,BC,195.4,Chennai
+Vel Tech Rangarajan College,CSE,2023,BC,195.8,Chennai
+
+Madras Institute of Technology,CSE,2019,OC,198.2,Chennai
+Madras Institute of Technology,CSE,2020,OC,198.4,Chennai
+Madras Institute of Technology,CSE,2021,OC,198.6,Chennai
+Madras Institute of Technology,CSE,2022,OC,198.8,Chennai
+Madras Institute of Technology,CSE,2023,OC,199.0,Chennai
+
+Madras Institute of Technology,ECE,2019,BC,196.8,Chennai
+Madras Institute of Technology,ECE,2020,BC,197.1,Chennai
+Madras Institute of Technology,ECE,2021,BC,197.4,Chennai
+Madras Institute of Technology,ECE,2022,BC,197.7,Chennai
+Madras Institute of Technology,ECE,2023,BC,198.0,Chennai
+
+Sri Krishna College of Engineering,CSE,2019,BC,195.4,Coimbatore
+Sri Krishna College of Engineering,CSE,2020,BC,195.8,Coimbatore
+Sri Krishna College of Engineering,CSE,2021,BC,196.2,Coimbatore
+Sri Krishna College of Engineering,CSE,2022,BC,196.6,Coimbatore
+Sri Krishna College of Engineering,CSE,2023,BC,197.0,Coimbatore
+
+Sri Krishna College of Engineering,AI & DS,2019,MBC,194.1,Coimbatore
+Sri Krishna College of Engineering,AI & DS,2020,MBC,194.6,Coimbatore
+Sri Krishna College of Engineering,AI & DS,2021,MBC,195.0,Coimbatore
+Sri Krishna College of Engineering,AI & DS,2022,MBC,195.5,Coimbatore
+Sri Krishna College of Engineering,AI & DS,2023,MBC,196.0,Coimbatore
+
+Kumaraguru College of Technology,CSE,2019,OC,197.0,Coimbatore
+Kumaraguru College of Technology,CSE,2020,OC,197.3,Coimbatore
+Kumaraguru College of Technology,CSE,2021,OC,197.6,Coimbatore
+Kumaraguru College of Technology,CSE,2022,OC,197.9,Coimbatore
+Kumaraguru College of Technology,CSE,2023,OC,198.2,Coimbatore
+
+Kumaraguru College of Technology,IT,2019,BC,196.0,Coimbatore
+Kumaraguru College of Technology,IT,2020,BC,196.4,Coimbatore
+Kumaraguru College of Technology,IT,2021,BC,196.8,Coimbatore
+Kumaraguru College of Technology,IT,2022,BC,197.2,Coimbatore
+Kumaraguru College of Technology,IT,2023,BC,197.6,Coimbatore
+
+Bannari Amman Institute of Technology,CSE,2019,MBC,194.5,Erode
+Bannari Amman Institute of Technology,CSE,2020,MBC,194.9,Erode
+Bannari Amman Institute of Technology,CSE,2021,MBC,195.3,Erode
+Bannari Amman Institute of Technology,CSE,2022,MBC,195.7,Erode
+Bannari Amman Institute of Technology,CSE,2023,MBC,196.1,Erode
+
+SASTRA University,CSE,2019,OC,198.4,Thanjavur
+SASTRA University,CSE,2020,OC,198.6,Thanjavur
+SASTRA University,CSE,2021,OC,198.8,Thanjavur
+SASTRA University,CSE,2022,OC,199.0,Thanjavur
+SASTRA University,CSE,2023,OC,199.1,Thanjavur
