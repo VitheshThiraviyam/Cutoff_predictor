@@ -17,7 +17,7 @@ const Colleges = () => {
         setLoading(false);
       }
     };
-
+    
     fetchColleges();
   }, []);
 

@@ -70,9 +70,7 @@ router.get("/predict-admission", async (req, res) => {
       const slope =
         (n * sumXY - sumX * sumY) /
         (n * sumX2 - sumX * sumX);
-
       const intercept = (sumY - slope * sumX) / n;
-
       const lastYear = Math.max(...years);
       const nextYear = lastYear + 1;
 
