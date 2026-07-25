@@ -8,8 +8,10 @@ import {
   Tooltip,
   CartesianGrid,
   ResponsiveContainer,
-  ReferenceLine
+  ReferenceLine,
 } from "recharts";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const PredictForm = () => {
   const [cutoff, setCutoff] = useState("");
@@ -31,19 +33,28 @@ const PredictForm = () => {
       setLoading(true);
 
       const response = await fetch(
-        `http://localhost:5000/api/predict-admission?branch=${branch}&category=${category}&location=${location}`
+        `${API_URL}/api/predict-admission?branch=${encodeURIComponent(
+          branch
+        )}&category=${encodeURIComponent(
+          category
+        )}&location=${encodeURIComponent(location)}`
       );
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch prediction");
+      }
 
       const data = await response.json();
 
       const eligible = data.predictions.filter(
-        (college) => Number(cutoff) >= college.predictedCutoff
+        (college) => Number(cutoff) >= Number(college.predictedCutoff)
       );
 
       setResults(eligible);
-      setLoading(false);
     } catch (error) {
-      console.error(error);
+      console.error("Prediction Error:", error);
+      alert("Unable to fetch prediction. Please try again.");
+    } finally {
       setLoading(false);
     }
   };
@@ -64,46 +75,55 @@ const PredictForm = () => {
             onChange={(e) => setCutoff(e.target.value)}
           />
 
-          <select value={category} onChange={(e) => setCategory(e.target.value)}>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
             <option value="">Select Category</option>
-            <option>OC</option>
-            <option>BC</option>
-            <option>MBC</option>
-            <option>SC</option>
-            <option>ST</option>
+            <option value="OC">OC</option>
+            <option value="BC">BC</option>
+            <option value="MBC">MBC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
           </select>
 
-          <select value={branch} onChange={(e) => setBranch(e.target.value)}>
+          <select
+            value={branch}
+            onChange={(e) => setBranch(e.target.value)}
+          >
             <option value="">Select Branch</option>
-            <option>CSE</option>
-            <option>IT</option>
-            <option>ECE</option>
-            <option>EEE</option>
-            <option>AI & DS</option>
-            <option>AI & ML</option>
-            <option>MECH</option>
-            <option>CIVIL</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="AI & DS">AI & DS</option>
+            <option value="AI & ML">AI & ML</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
           </select>
 
-          <select value={location} onChange={(e) => setLocation(e.target.value)}>
+          <select
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          >
             <option value="">Select Location</option>
-            <option>Chennai</option>
-            <option>Coimbatore</option>
-            <option>Madurai</option>
-            <option>Vellore</option>
-            <option>Erode</option>
-            <option>Thanjavur</option>
-            <option>Kanchipuram</option>
-            <option>Chengalpattu</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Erode">Erode</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+            <option value="Chengalpattu">Chengalpattu</option>
           </select>
 
-          <button type="submit">
+          <button type="submit" disabled={loading}>
             {loading ? "Predicting..." : "Predict Colleges"}
           </button>
         </form>
       </div>
 
-      {results.length > 0 && (
+      {!loading && results.length > 0 && (
         <div className="results-wrapper">
           <h3>📊 Eligible Colleges (This Year)</h3>
 
@@ -122,7 +142,12 @@ const PredictForm = () => {
             <ResponsiveContainer width="100%" height={450}>
               <BarChart
                 data={results}
-                margin={{ top: 20, right: 30, left: 20, bottom: 120 }}
+                margin={{
+                  top: 20,
+                  right: 30,
+                  left: 20,
+                  bottom: 120,
+                }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis
@@ -134,14 +159,18 @@ const PredictForm = () => {
                 />
                 <YAxis />
                 <Tooltip />
+
                 <ReferenceLine
                   y={Number(cutoff)}
-                  label={{ value: "", position: "top", fill: "red" }}
+                  stroke="red"
+                  strokeWidth={2}
+                  label="Your Cutoff"
                 />
+
                 <Bar
                   dataKey="predictedCutoff"
-                  barSize={12}
                   fill="#667eea"
+                  barSize={12}
                 />
               </BarChart>
             </ResponsiveContainer>
@@ -149,7 +178,7 @@ const PredictForm = () => {
         </div>
       )}
 
-      {results.length === 0 && !loading && (
+      {!loading && results.length === 0 && (
         <p className="no-result">No eligible colleges found.</p>
       )}
     </div>

@@ -9,7 +9,9 @@ const Colleges = () => {
   useEffect(() => {
     const fetchColleges = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/colleges");
+        const res = await await axios.get(
+          `${import.meta.env.VITE_API_URL}/api/colleges`
+        );
         setColleges(res.data);
         setLoading(false);
       } catch (err) {
@@ -17,7 +19,7 @@ const Colleges = () => {
         setLoading(false);
       }
     };
-    
+
     fetchColleges();
   }, []);
 
