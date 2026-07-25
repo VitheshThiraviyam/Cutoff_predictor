@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./PredictForm.css";
+import "./Predictform.css";
 import {
   BarChart,
   Bar,
